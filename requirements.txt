@@ -7,6 +7,7 @@ charset-normalizer
 check50
 clang-format
 cryptography
+cs50
 defusedxml
 editorconfig
 emoji
