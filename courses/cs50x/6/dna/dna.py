@@ -21,7 +21,7 @@ def main():
         sequence = file.read()
 
     # Find longest match of each STR in DNA sequence
-    STR_counts = {}
+    STR_counts: dict[str, int] = {}
     for subseq in SUBSEQUENCES:
         STR_counts[subseq] = longest_match(sequence, subseq)
 
@@ -33,7 +33,7 @@ def main():
     print("No match")
 
 
-def longest_match(sequence, subsequence):
+def longest_match(sequence: str, subsequence: str):
     """Returns length of longest run of subsequence in sequence."""
 
     # Initialize variables

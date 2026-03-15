@@ -4,7 +4,7 @@ from cs50 import get_string
 def main():
     text: str | None = get_string("Text: ")
     if text is None:
-        return 1
+        return
 
     lvl: int = reading_level(text)
     if lvl >= 16:
